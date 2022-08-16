@@ -1,0 +1,4 @@
+-para criar uma linha(divisoria) podemos usar a tag <hr>
+-para exibir o < e > no html temos de usar &lt; e &gt; respectivamente, isso por que se utilizarmaos diretamente <> ele pode interpretar com uma tag
+-para uso de emoji podemos ir no site emojipedia e pegar o codigo correspondente ao emoji. No video o Guananara encontra o codigo em Codepoints
+o codigo no site esta 	U+1F596 vamos usar apenas o 1F596. No HTML usaremos &#x junto do codigo do emoji: &#x1F596;
