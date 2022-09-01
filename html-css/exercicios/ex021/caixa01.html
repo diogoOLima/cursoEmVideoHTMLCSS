@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px 20px 30px 40px;
+            
+            margin: 10px;  /*Aplica 10px para todos os lados*/
+            /*margin: auto; centraliza um conteudo de uma tag do tipo block */
+            /* margin: 10px auto 20px auto; dessa forma podemos usar tamanhos especificos para cada margem em cima e em baixo e deixar o conteudo ao meio se ele for do tipo block*/
+
+            outline: salmon dashed 5px;
+        }
+
+        a {
+            border-width: 10px;
+            border-style: dashed;
+            border-color: red;
+            margin: auto;/*nada acontece pois margin auto só funciona em tags do tipo block.
+            Caso seja preciso podemos mudar uma tag para inline ou block por exemplo: display: inline ou display:block converte um tipo para outro */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os 
+    <a href="#">links são exemplos de caixas inline-level</a>
+    . Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
