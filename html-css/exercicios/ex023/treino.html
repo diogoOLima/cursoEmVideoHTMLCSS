@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Treino Tabela</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -37,12 +37,18 @@
             background-color: gray;
         }
 
-        tbody > tr:nth-child(2n-1) { /*2n-1 ou odd*/
-            background-color: blanchedalmond;
+        tbody > tr:nth-child(4n-3) { /*2n-1 ou odd*/
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(4n-2) { /*2n-1 ou odd*/
+            background-color: lightgoldenrodyellow;
+        }
+        tbody > tr:nth-child(4n-1) { /*2n-1 ou odd*/
+            background-color: lightgreen;
         }
 
-        tbody > tr:nth-child(2n) { /*2n ou even*/
-            background-color: lightgray;
+        tbody > tr:nth-child(4n) { /*2n ou even*/
+            background-color: lightslategray;
         }
 
         .numero {
@@ -54,22 +60,6 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
-    <!-- ANATOMIA PARA TABELAS GRANDES 
-    TABLE
-        CAPTION
-        THEAD
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH
-
-        O que é scope?
-        é usado para definir se o dados do titulo(th)serao exibidos abixo(col) ou ao lado(row)
-        por que usar scope?
-        R: para os mecanismos de busca consiga analisar de forma coerente o conteudo da tebela
-    -->
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
@@ -195,9 +185,5 @@
             </tr>
         </tfoot>
     </table>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis optio rerum mollitia necessitatibus nobis, in doloremque minima cupiditate at iste eveniet modi illum! Quod a voluptates cupiditate officiis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error qui odio quia praesentium, velit doloribus accusamus placeat dolorum, nulla sint maiores beatae tenetur eaque labore exercitationem ex mollitia quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta earum quia reprehenderit officiis consequuntur quas enim dolore eveniet quibusdam, ratione voluptate commodi dolor? Error officiis omnis maiores cum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ad. Suscipit repudiandae consequuntur officiis reiciendis, numquam vitae aliquid mollitia qui porro doloremque obcaecati aliquam quae sit sunt cupiditate consectetur esse!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis optio rerum mollitia necessitatibus nobis, in doloremque minima cupiditate at iste eveniet modi illum! Quod a voluptates cupiditate officiis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error qui odio quia praesentium, velit doloribus accusamus placeat dolorum, nulla sint maiores beatae tenetur eaque labore exercitationem ex mollitia quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta earum quia reprehenderit officiis consequuntur quas enim dolore eveniet quibusdam, ratione voluptate commodi dolor? Error officiis omnis maiores cum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ad. Suscipit repudiandae consequuntur officiis reiciendis, numquam vitae aliquid mollitia qui porro doloremque obcaecati aliquam quae sit sunt cupiditate consectetur esse!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis optio rerum mollitia necessitatibus nobis, in doloremque minima cupiditate at iste eveniet modi illum! Quod a voluptates cupiditate officiis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error qui odio quia praesentium, velit doloribus accusamus placeat dolorum, nulla sint maiores beatae tenetur eaque labore exercitationem ex mollitia quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta earum quia reprehenderit officiis consequuntur quas enim dolore eveniet quibusdam, ratione voluptate commodi dolor? Error officiis omnis maiores cum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ad. Suscipit repudiandae consequuntur officiis reiciendis, numquam vitae aliquid mollitia qui porro doloremque obcaecati aliquam quae sit sunt cupiditate consectetur esse!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis optio rerum mollitia necessitatibus nobis, in doloremque minima cupiditate at iste eveniet modi illum! Quod a voluptates cupiditate officiis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error qui odio quia praesentium, velit doloribus accusamus placeat dolorum, nulla sint maiores beatae tenetur eaque labore exercitationem ex mollitia quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dicta earum quia reprehenderit officiis consequuntur quas enim dolore eveniet quibusdam, ratione voluptate commodi dolor? Error officiis omnis maiores cum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ad. Suscipit repudiandae consequuntur officiis reiciendis, numquam vitae aliquid mollitia qui porro doloremque obcaecati aliquam quae sit sunt cupiditate consectetur esse!</p>
 </body>
 </html>
