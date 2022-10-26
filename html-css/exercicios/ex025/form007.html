@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest" required><!--select é um combobox onde as options sao seu conteudo e podemos categorizar eles por meio da tag optgroup-->
+                <option value="" selected disabled>--Escolha--</option><!--por padrão o select inicializa na pagina ja com a primeira opção selecionada para mudar isso criamos este option com o atributo selected-->
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="profissao" id="iprof" list="lstprofissao" maxlength="20"><!--Na opção de combobox acima o usuario nao consegue de digitar um estado que nao esta no dominio do combobox(tag select). Podemos fazer isso com o input, alem disso, podemos atribuir value para eles e pelo que entendi isso seria enviado para o php, mas ao meu ver nao faz muito sentido, pois se o usuario pode digitar o que quiser, o que ele digitar não terá um value-->
+            <datalist id="lstprofissao">
+                <option value="ADM">Administrador</option>
+                <option value="CON">Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <br>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10" style="resize: none" placeholder="Sua mensagem aqui!"></textarea><!--Quando usamos textarea precisamos usar o metodo da tag form, isso por que o metodo get aceita ate 3000bytes. Alem disso, por padrão essa tag permite que a caixa de texto possa ser aumentada e isso por acabar causando alugum problema visual com a estrutura do site, por isso usei o estilo resize: none. Podemos tambem limitar a quantidade de caracteres com o atributo maxlength -->
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
