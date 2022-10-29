@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*ESTILO PARA IMPRESSORA*/
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none; /*Dessa forma conseguimos deixar de mostrar o menu na hora de fazer a impressão*/
+}
+
+article::after { /*Nessa linha usamos um pseudo elemento para adicionar apos o article uma fraseque colocamos no content*/
+    content:'Este artigo foi impresso atravez do site DiogoLima.com'; 
+}
+
+article { 
+    width: 100%;
+}
